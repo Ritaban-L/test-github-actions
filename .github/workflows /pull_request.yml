@@ -9,5 +9,7 @@ jobs:
     steps:
       - name: run
         run: |
-          exho "Running"
-      
+          touch file.txt
+          git add file.txt
+          git commit -m "Creating file"
+          git push
