@@ -1,15 +1,13 @@
-name: pull_request
+name: Check pull request
 
-on:
+on: 
   pull_request:
-
+  
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - id: on_push
+      - name: run
         run: |
-          touch new_file.txt
-          git add new_file.txt
-          git commit -m "Adding new file"
-          git push
+          exho "Running"
+      
